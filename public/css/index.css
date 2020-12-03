@@ -140,6 +140,13 @@ html{
     margin-right: 3rem;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
 .main .principal-container .basket .basket-item .item-form .section-right .product-quantity{
     position: absolute;
     right: 0;
