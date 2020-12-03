@@ -1,13 +1,18 @@
 @import url('./shared/pushbar.css');
+:root{
+    --primary-color: #141414;
+}
+
+html{
+    font-size: 62.5%;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-}
-:root{
-    --primary-color: #141414;
 }
 
 .main {
@@ -78,9 +83,38 @@
     width: 100%;
 }
 
+.main .principal-container .basket .basket-item .item-form .section-left .product-description .product-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.07rem;
+    color: rgb(199, 199, 199);
+    line-height: 1rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
 
+.main .principal-container .basket .basket-item .item-form .section-left .product-description .product-name{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: white;
+}
 
+.main .principal-container .basket .basket-item .item-form .section-left .product-description .product-id{
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: rgb(199, 199, 199);
+    margin-bottom: 15px;
+    font-weight: 400;
+}
 
+.main .principal-container .basket .basket-item .item-form .section-left .product-description .delete-button a{
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 /* .c1, .c4{
     background-color: purple;
@@ -95,24 +129,15 @@
 
 
 /* Sección resumen de compra (Apartado derecho) */
-.main .principal-container .order-summary-container{
+.main .principal-container .order-summary{
     width: 28.125%;
-    max-height: 500px;
+    max-height: 400px;
     position: sticky;
-    top: 0;
+    top: 80px;
     margin-left: 3.125%;
-}
-
-.main .principal-container .order-summary-container .space{
-    height: 90px;
-}
-
-.main .principal-container .order-summary-container .order-summary{
     background-color: var(--primary-color);
-
-
-
 }
+
 
 
 
