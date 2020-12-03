@@ -4,6 +4,11 @@ if(document.readyState == 'loading'){
     ready()
 }
 
+var cont = document.createElement("input");
+cont.setAttribute("type", "number");
+cont.setAttribute("max", 100);
+cont.setAttribute("min", 0);
+
 function ready() {
     var removeBasketItemButtons = document.getElementsByClassName('btn-delete')
     // console.log(removeBasketItemButtons)
@@ -55,8 +60,11 @@ function updateBasketTotal(){
         var productquantity = productquantitys[i]
         var quantityvalue = productquantity.getElementsByClassName('quantity-value') [0]
         var quantity = quantityvalue.value
-        if (isNaN(quantity) || quantity <=0){
+        if (isNaN(quantity) || quantity <0){
             quantity = 0
+            document.getElementsByClassName('quantity-value').value = 0
+            // document.quantity-value.value == 0
+            // $('quantity-value').val('0')
         }
         console.log(quantity)
         totalquantity = parseInt(totalquantity) + parseInt(quantity)
@@ -76,6 +84,16 @@ function updateBasketTotal(){
     document.getElementsByClassName('products')[0].innerText = "Bolsa de Compras (" + totalquantity + " productos)"
 }
 
+function registrarVenta(){
+    var respuesta = confirm("¿Desea registrar su compra?")
+    if(respuesta == true){
+        alert("Compra realizada")
+    }
+    else
+    {
+        return false;
+    }
+}
 
 // Producto 1
 let btnAdd1 = document.querySelector(".btn1-i");
