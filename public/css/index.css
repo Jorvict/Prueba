@@ -48,6 +48,11 @@ html{
     padding: 30px 60px;
 }
 
+.main .principal-container .basket .header-container .title{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
 .main .principal-container .basket .basket-item{
     background-color: var(--primary-color);
     margin: 30px 0;
@@ -60,9 +65,9 @@ html{
 
 .main .principal-container .basket .basket-item .item-form .section-left{
     max-width: 50%;
+    width: 50%;
     padding-right: 30px;
     display: flex;
-
 }
 
 .main .principal-container .basket .basket-item .item-form .section-left .img-container{
@@ -70,6 +75,7 @@ html{
     min-width: 90px;
     width: 90px;
     display: inline-block;
+    text-align: center;
 }
 
 .main .principal-container .basket .basket-item .item-form .section-left .img-container .img-producto{
@@ -105,42 +111,139 @@ html{
     font-size: 1.2rem;
     line-height: 1.2;
     color: rgb(199, 199, 199);
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
     font-weight: 400;
 }
 
-.main .principal-container .basket .basket-item .item-form .section-left .product-description .delete-button a{
+.main .principal-container .basket .basket-item .item-form .section-left .product-description .delete-button-container .btn-delete{
     font-size: 1.2rem;
     color: white;
     cursor: pointer;
     text-decoration: underline;
+    background-color: initial;
+    outline: none;
+    border: none;
 }
 
-/* .c1, .c4{
-    background-color: purple;
-    width: 100%;
+.main .principal-container .basket .basket-item .item-form .section-right{
+    max-width: 50%;
+    width: 50%;
+    display: flex;
+    position: relative;
 }
 
-.c2, .c3{
-    background-color: orange;
-    width: 100%;
+.main .principal-container .basket .basket-item .item-form .section-right .product-price{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding-top: 1rem;
+    margin-right: 3rem;
 }
-*/
+
+.main .principal-container .basket .basket-item .item-form .section-right .product-quantity{
+    position: absolute;
+    right: 0;
+}
+
+.main .principal-container .basket .basket-item .item-form .section-right .product-quantity .container-quantity{
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    height: 50px;
+    width: 120px;
+    margin: auto;
+}
+
+.main .principal-container .basket .basket-item .item-form .section-right .product-quantity .container-quantity .quantity-value{
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    height: 100%;
+    max-width: 100%;
+    text-align: center;
+    width: 4rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.decrease, .increase {
+    background: none;
+    color: white;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    font-weight: 600;
+    height: 100%;
+    outline: none;
+    text-align: center;
+    -webkit-transition: color 0.3s ease 50ms;
+    transition: color 0.3s ease 50ms;
+    width: 37px;
+    border: none;
+    cursor: pointer;
+}
+
+.decrease{
+    border-right: solid 1px white;
+}
+
+.increase{
+    border-left: solid 1px white;
+}
+
+
 
 
 /* Sección resumen de compra (Apartado derecho) */
 .main .principal-container .order-summary{
     width: 28.125%;
-    max-height: 400px;
+    max-height: 200px;
     position: sticky;
     top: 80px;
     margin-left: 3.125%;
     background-color: var(--primary-color);
 }
 
+.main .principal-container .order-summary .order-status{
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 5rem;
+    /* background-color: red; */
+    padding: 10px 12px 20px 12px;
+}
 
+.main .principal-container .order-summary .order-status .title-container .title{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
 
+.main .principal-container .order-summary .order-status .title-container .total-container{
+    display: flex;
+    position: relative;
+}
 
+.main .principal-container .order-summary .order-status .title-container .total-container span{
+    position: absolute;
+    right: 0;
+}
+
+.main .principal-container .order-summary .order-status .title-container .button-container .btn-buy{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1.2rem 0;
+    background-color: #202020;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 2px solid #5a5a5a;
+    cursor: pointer;
+}
 
 
 
