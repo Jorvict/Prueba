@@ -321,6 +321,10 @@ html{
         width: 100%;
     }
 
+    .main .principal-container .basket .header-container .title{
+        font-size: 2.1rem;
+    }
+
     .main .principal-container .basket .basket-item .item-form .section-left{
         display: initial;
     }
