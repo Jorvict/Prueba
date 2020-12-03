@@ -6,6 +6,9 @@
     list-style: none;
     text-decoration: none;
 }
+:root{
+    --primary-color: #141414;
+}
 
 .main {
     width: 100%;
@@ -16,10 +19,108 @@
     background-repeat: none;
     background-size: cover;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
+    color: white;
 }
 
+.main .principal-container{
+    width: 100%;
+    max-width: 1000px;
+    /* height: auto; */
+    display: flex;
+    /* justify-content: center; */
+}
+
+/* Sección de productos dentro del carrito (Apartado izquierdo) */
+.main .principal-container .basket{
+    width: 68.75%;
+}
+
+.main .principal-container .basket .header-container{
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 30px 60px;
+}
+
+.main .principal-container .basket .basket-item{
+    background-color: var(--primary-color);
+    margin: 30px 0;
+}
+
+.main .principal-container .basket .basket-item .item-form{
+    padding: 30px 60px 30px 60px;
+    display: flex;
+}
+
+.main .principal-container .basket .basket-item .item-form .section-left{
+    max-width: 50%;
+    padding-right: 30px;
+    display: flex;
+
+}
+
+.main .principal-container .basket .basket-item .item-form .section-left .img-container{
+    margin: 0 30px 0 0;
+    min-width: 90px;
+    width: 90px;
+    display: inline-block;
+}
+
+.main .principal-container .basket .basket-item .item-form .section-left .img-container .img-producto{
+    max-width: 100%;
+    height: 90px;
+    border: 1px solid black;
+}
+
+
+.main .principal-container .basket .basket-item .item-form .section-left .product-description{
+    width: 100%;
+}
+
+
+
+
+
+/* .c1, .c4{
+    background-color: purple;
+    width: 100%;
+}
+
+.c2, .c3{
+    background-color: orange;
+    width: 100%;
+}
+*/
+
+
+/* Sección resumen de compra (Apartado derecho) */
+.main .principal-container .order-summary-container{
+    width: 28.125%;
+    max-height: 500px;
+    position: sticky;
+    top: 0;
+    margin-left: 3.125%;
+}
+
+.main .principal-container .order-summary-container .space{
+    height: 90px;
+}
+
+.main .principal-container .order-summary-container .order-summary{
+    background-color: var(--primary-color);
+
+
+
+}
+
+
+
+
+
+
+
+/* 
 .main .video {
     width: 100%;
     display: flex;
@@ -78,7 +179,7 @@
     align-items: flex-start;
     font-weight: 300;
     font-size: 15px;
-}
+} */
 
 
 /*--------------------------------*/
