@@ -11,7 +11,7 @@ function ready() {
         var button = removeBasketItemButtons[i]
         button.addEventListener('click', removeBasketItem)
     }
-    
+
 }
 
 function removeBasketItem(event){
@@ -47,6 +47,9 @@ function updateBasketTotal(){
     // Se declara array para cantidad
     var arrayquantity = []
 
+    //Se declara variable para total de productos
+    var totalquantity = 0
+
     // Se obtiene los valores de las cantidades
     for (var i = 0; i < productquantitys.length; i++){
         var productquantity = productquantitys[i]
@@ -56,10 +59,11 @@ function updateBasketTotal(){
             quantity = 0
         }
         console.log(quantity)
+        totalquantity = parseInt(totalquantity) + parseInt(quantity)
         arrayquantity.push(quantity)
     }
 
-    // Se declara variable para total
+    // Se declara variable para total precio
     var total = 0
 
     // Se multiplica la cantidad con su costo respectivo
@@ -69,6 +73,7 @@ function updateBasketTotal(){
 
     total = Math.round(total*100) / 100
     document.getElementsByClassName('total')[0].innerText = "S/ "+ total
+    document.getElementsByClassName('products')[0].innerText = "Bolsa de Compras (" + totalquantity + " productos)"
 }
 
 
