@@ -11,7 +11,7 @@
     <script src="./public/js/index.js" async></script>
 </head>
 
-<body>
+<body onload="updateBasketTotal();">
     <nav>
         <div class="logo"><img loading="lazy" src="../public/images/logo.webp" alt="HouseNeonLed"></div>
         <input type="checkbox" id="click">
@@ -104,11 +104,11 @@
                                 </div>
                                 <div class="product-quantity">
                                     <div class="container-quantity">
-                                        <button class="decrease" title="Reducir cantidad">
+                                        <button class="decrease btn1-d" title="Reducir cantidad">
                                             -
                                         </button>
-                                        <input type="text" class="quantity-value" id="quantity-value" value="1" readonly>
-                                        <button class="increase">
+                                        <input type="text" class="quantity-value inp-1" id="quantity-value" value="1">
+                                        <button class="increase btn1-i">
                                             +
                                         </button>
                                     </div>
@@ -150,11 +150,11 @@
                                 </div>
                                 <div class="product-quantity">
                                     <div class="container-quantity">
-                                        <button class="decrease btn-1" title="Reducir cantidad">
+                                        <button class="decrease btn2-d" title="Reducir cantidad">
                                             -
                                         </button>
-                                        <input type="text" class="quantity-value" id="quantity-value" value="1" readonly>
-                                        <button class="increase">
+                                        <input type="text" class="quantity-value inp-2" id="quantity-value" value="1" readonly>
+                                        <button class="increase btn2-i">
                                             +
                                         </button>
                                     </div>
@@ -196,11 +196,11 @@
                                 </div>
                                 <div class="product-quantity">
                                     <div class="container-quantity">
-                                        <button class="decrease btn-2" title="Reducir cantidad">
+                                        <button class="decrease btn3-d" title="Reducir cantidad">
                                             -
                                         </button>
-                                        <input type="text" class="quantity-value" id="quantity-value" value="1" readonly>
-                                        <button class="increase">
+                                        <input type="text" class="quantity-value inp-3" id="quantity-value" value="1" readonly>
+                                        <button class="increase btn3-i">
                                             +
                                         </button>
                                     </div>
@@ -242,11 +242,11 @@
                                 </div>
                                 <div class="product-quantity">
                                     <div class="container-quantity">
-                                        <button class="decrease" title="Reducir cantidad">
+                                        <button class="decrease btn4-d" title="Reducir cantidad">
                                             -
                                         </button>
-                                        <input type="text" class="quantity-value" id="quantity-value" value="1" readonly>
-                                        <button class="increase">
+                                        <input type="text" class="quantity-value inp-4" id="quantity-value" value="1" readonly>
+                                        <button class="increase btn4-i">
                                             +
                                         </button>
                                     </div>
@@ -288,11 +288,11 @@
                                 </div>
                                 <div class="product-quantity">
                                     <div class="container-quantity">
-                                        <button class="decrease" title="Reducir cantidad">
+                                        <button class="decrease btn5-d" title="Reducir cantidad">
                                             -
                                         </button>
-                                        <input type="text" class="quantity-value" id="quantity-value" value="1" readonly>
-                                        <button class="increase">
+                                        <input type="text" class="quantity-value inp-5" id="quantity-value" value="1" readonly>
+                                        <button class="increase btn5-i">
                                             +
                                         </button>
                                     </div>

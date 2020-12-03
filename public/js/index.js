@@ -1,25 +1,84 @@
-let btnAdd = document.querySelector(".increase");
-let btnSubtract = document.querySelector(".decrease");
-let input = document.querySelector(".quantity-value");
-
-btnAdd.addEventListener('click', function(event){
-    input.value = parseInt(input.value) + 1;
-})
-btnSubtract.addEventListener('click', function(event){
-    input.value = parseInt(input.value) - 1;
-})
-
-
-var removeBasketItemButtons = document.getElementsByClassName('btn-delete')
-console.log(removeBasketItemButtons)
-for (var i = 0; i < removeBasketItemButtons.length; i++){
-    var button = removeBasketItemButtons[i]
-    button.addEventListener('click', function(event) {
-        var buttonClicked = event.target
-        buttonClicked.parentElement.parentElement.parentElement.parentElement.remove()
-        updateBasketTotal()
-    })
+if(document.readyState == 'loading'){
+    document.addEventListener('DOMContentLoaded', ready)
+}else{
+    ready()
 }
+
+function ready() {
+    var removeBasketItemButtons = document.getElementsByClassName('btn-delete')
+    console.log(removeBasketItemButtons)
+    for (var i = 0; i < removeBasketItemButtons.length; i++){
+        var button = removeBasketItemButtons[i]
+        button.addEventListener('click', removeBasketItem)
+    }
+}
+
+function removeBasketItem(event){
+    var buttonClicked = event.target
+    buttonClicked.parentElement.parentElement.parentElement.parentElement.remove()
+    updateBasketTotal()
+}
+
+// Producto 1
+let btnAdd1 = document.querySelector(".btn1-i");
+let btnSubtract1 = document.querySelector(".btn1-d");
+let input1 = document.querySelector(".inp-1");
+
+btnAdd1.addEventListener('click', function(event){
+    input1.value = parseInt(input1.value) + 1;
+})
+btnSubtract1.addEventListener('click', function(event){
+    input1.value = parseInt(input1.value) - 1;
+})
+
+// Producto 2
+let btnAdd2 = document.querySelector(".btn2-i");
+let btnSubtract2 = document.querySelector(".btn2-d");
+let input2 = document.querySelector(".inp-2");
+
+btnAdd2.addEventListener('click', function(event){
+    input2.value = parseInt(input2.value) + 1;
+})
+btnSubtract2.addEventListener('click', function(event){
+    input2.value = parseInt(input2.value) - 1;
+})
+
+// Producto 3
+let btnAdd3 = document.querySelector(".btn3-i");
+let btnSubtract3 = document.querySelector(".btn3-d");
+let input3 = document.querySelector(".inp-3");
+
+btnAdd3.addEventListener('click', function(event){
+    input3.value = parseInt(input3.value) + 1;
+})
+btnSubtract3.addEventListener('click', function(event){
+    input3.value = parseInt(input3.value) - 1;
+})
+
+// Producto 4
+let btnAdd4 = document.querySelector(".btn4-i");
+let btnSubtract4 = document.querySelector(".btn4-d");
+let input4 = document.querySelector(".inp-4");
+
+btnAdd4.addEventListener('click', function(event){
+    input4.value = parseInt(input4.value) + 1;
+})
+btnSubtract4.addEventListener('click', function(event){
+    input4.value = parseInt(input4.value) - 1;
+})
+
+// Producto 5
+let btnAdd5 = document.querySelector(".btn5-i");
+let btnSubtract5 = document.querySelector(".btn5-d");
+let input5 = document.querySelector(".inp-5");
+
+btnAdd5.addEventListener('click', function(event){
+    input5.value = parseInt(input5.value) + 1;
+})
+btnSubtract5.addEventListener('click', function(event){
+    input5.value = parseInt(input5.value) - 1;
+})
+
 
 function updateBasketTotal(){
 
