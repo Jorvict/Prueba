@@ -311,11 +311,43 @@ html{
 
 
 /*--------------------------------*/
+@media screen and (max-width: 425px) {
+    .main .principal-container {
+        width: 100%;
+        display: block;
+    }
 
-@media (max-width: 650px) {
+    .main .principal-container .basket{
+        width: 100%;
+    }
+
+    .main .principal-container .basket .basket-item .item-form .section-left{
+        display: initial;
+    }
+
+    .main .principal-container .basket .basket-item .item-form .section-right{
+        display: initial;
+    }
+
+    .main .principal-container .basket .basket-item .item-form .section-right .product-price{
+        margin-right: 0;
+        margin-bottom: 5rem;
+        text-align: end;
+    }
+
+    /* Summary-order */
+    .main .principal-container .order-summary{
+        width: 90%;
+        margin: 5%;
+        position: initial;
+        top: initial;
+    }
+
+}
+/* @media (max-width: 650px) {
     .video video {
         width: 350px !important;
         height: 300px !important;
         transition: .3s;
     }
-}
+} */
